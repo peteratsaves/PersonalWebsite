@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Peter Atsaves Portfolio</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+        <style>
+            .collapsible {
+              background-color: white;
+              color: white;
+              cursor: pointer;
+              padding: 18px;
+              width: 100%;
+              border: none;
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+            }
+            
+            .active, .collapsible:hover {
+              background-color: #555;
+            }
+            
+            .content {
+              padding: 0 18px;
+              display: none;
+              overflow: hidden;
+              background-color: #f1f1f1;
+            }
+            </style>            
+	</head>
+
+	<body class="portfolio">
+		<nav class="nav1"> <!--MENU AT TOP-->
+			<ul>
+				<li class="menu-item"><a href="about.html">About Me</a></li>
+				<li class="menu-item"><a href="portfolio.html" class="activePage">Portfolio</a></li>
+				<li class="menu-item"><a href="contact.html">Contact</a></li>
+				<li class="menu-item"><a href="home.html">Project Work</a></li>
+				<li class="menu-item"><a href="reviews.html">Reviews</a></li>
+			</ul>
+		</nav>
+
+        <!--<div class="projectsMenu">
+            <ul>
+                <li class="menu-item">COMPLETE</li>
+                <li class="menu-item">IN PROGRESS</li>
+            </ul>
+        </div>-->
+
+        <h1>Projects/Work I have completed:</h1>
+                
+        <div class="projectList">
+            <button type="button" class="collapsible"><table class="projectsTable"> <!--PROJECT 1-->
+                <tr>
+                    <td class="project1">Project 1</td>
+                </tr>
+                <tr>
+                    <td><div class="square">&#9935;</div></td>
+                </tr>
+                <tr>
+                    <td class="project3">Personal Website from Scratch</td>
+                </tr>
+                <tr>
+                    <td class="project4">HTML/CSS</td>
+                </tr>
+                <tr>
+                    <td class="project5">December 2019</td>
+                </tr>
+            </table></button>
+            <div class="content">
+                <p>I built a personal website from scratch using HTML, CSS, and Javascript. This was the first time I used these languages, but I learned enough in class to build a basic but functional website.</p>
+                <div class="portfolioLinks"><a href="https://github.com/peteratsaves" target="_blank">GitHub</a></div>
+            </div>
+            <button type="button" class="collapsible"><div><table class="projectsTable"> <!--PROJECT 1-->
+                <tr>
+                    <td class="project1">Project 2</td>
+                </tr>
+                <tr>
+                    <td><div class="square">&#9992;</div></td>
+                </tr>
+                <tr>
+                    <td class="project3">Airplane Ticket Booking System</td>
+                </tr>
+                <tr>
+                    <td class="project4">Java</td>
+                </tr>
+                <tr>
+                    <td class="project5">April 2020</td>
+                </tr>
+            </table><div></button>
+            <div class="content">
+                <p>I created an airplane ticket booting system where users could register and search for flights based on location, number of tickets, time, and more.</p>
+                <div class="portfolioLinks"><a href="https://github.com/peteratsaves/Airplane-Booking-Apr-2020" target="_blank">GitHub</a></div>
+            </div>
+        </div>
+        <div class="projectList">
+            <button type="button" class="collapsible"><table class="projectsTable"> <!--PROJECT 1-->
+                <tr>
+                    <td class="project1">Project 3</td>
+                </tr>
+                <tr>
+                    <td><div class="square">&#8731;</div></td>
+                </tr>
+                <tr>
+                    <td class="project3">Convolutional Neural Network</td>
+                </tr>
+                <tr>
+                    <td class="project4">Java</td>
+                </tr>
+                <tr>
+                    <td class="project5">November 2020</td>
+                </tr>
+            </table></button>
+            <div class="content">
+                <p>I worked with a group to create a CNN. This was used to classify images, specifically numbers 0-9, and we got this to identify each number with 70% accuracy.</p>
+                <div class="portfolioLinks"><a href="https://github.com/peteratsaves" target="_blank">GitHub</a></div>
+            </div>    
+            <button type="button" class="collapsible"><table class="projectsTable"> <!--PROJECT 1-->
+                <tr>
+                    <td class="project1">Project 4</td>
+                </tr>
+                <tr>
+                    <td><div class="square">&#9936;</div></td>
+                </tr>
+                <tr>
+                    <td class="project3">Sustainable Energy</td>
+                </tr>
+                <tr>
+                    <td class="project4">Java</td>
+                </tr>
+                <tr>
+                    <td class="project5">July 2021</td>
+                </tr>
+            </table></button>
+            <div class="content">
+                <p>I worked for a non-profit company to come up with a solution to reusable batteries. My group created an app that gives you an estimate of your car's battery life based on a number of factors.</p>
+                <div class="portfolioLinks"><a href="https://devpost.com/software/sustainable-energy-team-7-x-voltage" target="_blank">DevPost</a></div>
+            </div>    
+        </div>
+        <script src="rwd_nav.js"></script>
+        
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+    <!--credit to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible (w3Schools)-->
+	</body>
+</html>

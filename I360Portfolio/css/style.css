@@ -1,0 +1,157 @@
+.nav1 a {
+    color: orange;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.nav1 li{
+    list-style-type: none;
+}
+
+.nav1 ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px;
+    margin-top: -5px;
+}
+
+/*Active Page*/
+.about .activePage{color:white;}
+.portfolio .activePage{color:white;}
+.reviews .activePage{color:white;}
+.home .activePage{color:white;}
+.contact .activePage{color:white;}
+
+
+/*About Page*/
+.aboutImages{display: flex; margin: 20px 200px; justify-content: space-between;}
+.aboutImages2{display: flex; margin: 20px 200px; justify-content: center;}
+.about{text-align: center; margin: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.about h1{color:orange; margin-top: 50px; margin-bottom: 0px;}
+.work a{text-decoration: none; color: white; font-size: 30px;}
+.work a:hover{color: black;}
+.work li{background-color: dodgerblue; padding: 20px 40px; border-radius: 10%;}
+.work ul{list-style-type: none; text-decoration: none; display: flex; flex-direction: row; padding: 20px 400px; justify-content: space-around;}
+.info{display: flex; justify-content: center;}
+.info2{color: black; display: flex; flex-direction: column; justify-content: space-evenly; height: 300px; width:400px; align-items: flex-start; font-size: 25px; text-align: left; list-style-type: none;}
+.infoPic{border-radius: 50%;}
+.about p{margin: 0px 200px; font-size: 20px;}
+.homePics{display: flex;}
+.homePics2{display: flex; flex-direction: column;}
+.homePics3{display: flex; flex-direction: column; margin-top: 125px;}
+.pics3{}
+
+
+/*Portfolio Page*/
+.portfolio{margin: 0px;  font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.projectsTable{background-color: gainsboro; text-align: center;}
+.project1{background-color: dodgerblue; width: 350px; height: 50px; font-size: 30px; color: white;}
+.project3{background-color: aliceblue; color: black; font-size: 20px;}
+.project4{background-color: dodgerblue; color: black; font-size: 20px;}
+.project5{background-color: orange; color: black; font-size: 20px;} 
+.projectsMenu ul{list-style-type: none; display: flex; justify-content: space-between; padding: 20px 500px;}
+.projectsMenu li{background-color: gainsboro; padding: 10px 40px;}
+.projectList{display: flex; justify-content: space-between; padding: 0px 80px;}
+.square{height: 150px; width: 350px; background-color: white; font-size: 100px; color: black; display: flex; justify-content: center; align-items: flex-end;}
+.portfolio h1{text-align: center;}
+.portfolioLinks{background-color: dodgerblue; border-radius: 30%; padding: 10px 0px; text-align: center; color: white; width: 150px;} 
+.portfolioLinks:hover{background-color: navy;}
+.portfolioLinks a{text-decoration: none; color: white;}
+
+.collapsible {
+    background-color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    width: 500px;
+  }
+  /*w3schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible*/
+
+
+
+/*Reviews*/
+.reviews{margin:0px; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.reviewList{background-color: rgb(65, 62, 62); width: 300px; color: orange; display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 20px;}
+.reviewDescription{width: 280px; text-align: center; background-color: black; color: orange; padding: 10px 10px;}
+.reviewDiv{display: flex; flex-direction: row; justify-content: space-around;}
+.reviewTop{display: flex; justify-content: center; text-align: center; margin-bottom: 20px; border-spacing: 10px;}
+.reviews h1{display: flex; justify-content: center; text-align: center;}
+.reviewTop th{font-size: 20px;}
+.reviewTop td{font-size: 70px;}
+
+/*Home*/
+.home{margin:0px; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.homeProject{display: flex; flex-direction: row; justify-content: space-around; margin: 20px 0px;}
+.homeProjectInfo{width: 600px; display: flex; flex-direction: column; }
+.home h2{margin: 2px;}
+.home h3{margin: 2px;}
+.home p{margin: 2px;}
+.home h1{text-align: center;}
+.homeProjectLinks{background-color: dodgerblue; text-decoration: none; padding: 5px 5px; border-radius: 10%; color: white; margin-left: 5px;}
+.homeProjectLinks2{background-color: green; text-decoration: none; padding: 5px 5px; border-radius: 10%; color: white; margin-left: 5px;}
+.homeProjectLinks:hover{background-color: navy;}
+.homeProjectLinks2:hover{background-color: rgb(114, 173, 12);}
+.homeProjects{display: flex; flex-direction: column;}
+
+/*contact*/
+.contact{margin: 0px; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.contactInfo{display: flex; justify-content: center; font-size: 30px; margin-bottom: 50px; margin-top: 50px;}
+.contactInfo th{color:white; text-align: right; background-color: black; padding: 15px;}
+.contactInfo td{color: white; background-color: orange; padding: 15px; text-align: left;}
+.linkedin{display: flex; justify-content: center; margin-bottom: -20px;}
+/*.contactPic{display: block; margin: auto; margin-bottom: 15px;}*/
+.contacts{display: flex; flex-direction: row; margin: 0px 20px; align-items: center; justify-content: center;}
+.contactLinks{background-color: dodgerblue; width: 200px; height: 272px; text-align: center; display: flex; align-items: center;  font-size: 35px; margin: 0px 5px; justify-content: center; padding: 0px;}
+.contactLinks li{list-style-type:none; text-decoration: none;}
+.contactLinks a{text-decoration: none; color: white;}
+.contactLinks:hover{background-color: navy;}
+.contactLinks:link{display: inline-block;}
+.contact p{margin: 0px 110px; font-size: 20px;}
+.contactMargin{margin:10px 110px; font-size: 20px;}
+.contact h1{text-align: center; margin-bottom: -30px;}
+.wrap{display: flex;}
+
+@media (max-width: 1200px) {
+    .aboutImages{flex-direction: column; margin: 20px 50px}
+    .pics3{width: 250px; height: 180px;}
+    .about p{margin: 0px 50px;}
+    .projectList{flex-direction: column;}
+    .content{width: 100%; padding: 0px;}
+    .contacts{flex-direction: column;}
+  }
+
+  @media (max-width: 900px) {
+    .wrap{flex-direction: column;}
+    .contactLinks{height: 100px; width: 300px; margin-bottom: 20px;}
+    .homeProject{flex-direction: column; align-items: center;}
+  }
+
+@media (max-width: 768px) {
+    .info{flex-direction: column;}
+    .reviewDiv{flex-direction: column; justify-content: center; align-items: center;}
+  }
+
+  @media (max-width: 650px) {
+    .nav1 ul{flex-direction: column; align-items: center;}
+    .homeProjectInfo{margin: 0px 30px; width: 100%;}
+  }
+
+@media (max-width: 500px) {
+  }

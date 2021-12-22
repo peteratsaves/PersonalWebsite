@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Peter Atsaves Portfolio</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body class="home">
+		<nav class="nav1"> <!--MENU AT TOP-->
+			<ul>
+				<li class="menu-item"><a href="about.html">About Me</a></li>
+				<li class="menu-item"><a href="portfolio.html">Portfolio</a></li>
+				<li class="menu-item"><a href="contact.html">Contact</a></li>
+				<li class="menu-item"><a href="home.html" class="activePage">Project Work</a></li>
+				<li class="menu-item"><a href="reviews.html">Reviews</a></li>
+			</ul>
+		</nav>	
+
+		<h1>Project Work</h1>
+
+		<div class="homeProjects">
+		<div class="homeProject">
+			<div class="homeProjectInfo">
+				<h2>Light Sensor Robot<a href="https://github.com/peteratsaves/Light-Sensor-Oct-2021" class="homeProjectLinks" target="_blank">GitHub</a><a href="pdf/robotics report 3 (2).pdf" class="homeProjectLinks2" target="_blank">Report</a></h2>
+				<h3>Robotics Class: October 2021</h3>
+				<p>We had to build a robot which can be placed anywhere in a room and find a light source. This included attaching a light sensor that scans for light and having the robot move after periodically scanning for the strongest direction of the light. When no light is found, we implemented a case to have the robot move forward and turn until it finds a light source that meets the threshold.</p>
+			</div>
+			<div>
+				<img src="pics/Robot1.JPG" alt="Robot1" width=400 height=200>
+			</div>
+		</div>	
+		<div class="homeProject">
+			<div class="homeProjectInfo">
+				<h2>Maze Traversal Robot<a href="https://github.com/peteratsaves/Maze-Traversal-Nov-2021" class="homeProjectLinks" target="_blank">GitHub</a><a href="pdf/Assignment 4 Robotics (1).pdf" class="homeProjectLinks2" target="_blank">Report</a></h2>
+				<h3>Robotics Class: November 2021</h3>
+				<p>Our task was to build a robot which starts at the opening of a maze and can travel to the end of it without being moved or manually controlled throughout the maze. Our approach was to have the robot track the wall and follow the wall until it gets to the end of the maze. This required the use of ultrasonic sensor which scanned for open space, as well as bump sensors that were used to know when the robot was against or away from the wall. We finished in 2nd place in our class competition.
+			</div>
+			<div>
+				<img src="pics/Robot2.JPG" alt="Robot1" width=400 height=200>
+			</div>
+		</div>
+		<div class="homeProject">
+			<div class="homeProjectInfo">
+				<h2>Manipulation Robot<a href="https://github.com/peteratsaves/Manipulator-Dec-2021" class="homeProjectLinks" target="_blank">GitHub</a><a href="pdf/Project 5 (1).pdf" class="homeProjectLinks2" target="_blank">Report</a></h2>
+				<h3>Robotics Class: December 2021</h3>
+				<p>Our assignment was to build a 2-joint robot which can pick up 3 cans in a row, and move them behind the robot. After building our robot, we gathered data points to determine how the arms on the robot should move in order to pick up the cans. We used linear regression to generate an equation for each joint relative to the distance (ultrasonic sensor value), and we were able to pick up all 3 cans.</p>
+			</div>
+			<div>
+				<img src="pics/Robot3.JPG" alt="Robot1" width=400 height=200>
+			</div>
+		</div>	
+	</div>
+	</body>
+</html>
